@@ -27,35 +27,46 @@ const SocialLinks = () => {
       id: 3,
       child: (
         <>
-          Linkedin <FaLinkedin size={28} />
+          Mail <HiOutlineMail size={28} />
         </>
       ),
-      href: "https://linkedin.com",
-      style: "rounded-tr-md",
+      href: "mailto:foo@gmail.com",
     },
     {
       id: 4,
       child: (
         <>
-          Linkedin <FaLinkedin size={28} />
+          Resume <BsFillPersonLinesFill size={28} />
         </>
       ),
       href: "https://linkedin.com",
-      style: "rounded-tr-md",
+      style: "rounded-br-md",
     },
   ];
 
   return (
-    <div className="flex flex-col top-[35%] left-0 fixed">
+    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
       <ul>
-        <li className="flex justify-between items-center w-40 h-12 px-4 bg-gray-500 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 ">
-          <a
-            href=""
-            className="flex justify-between items-center w-full text-white"
+        {links.map(({ id, child, href, style, download }) => (
+          <li
+            key={id}
+            className={
+              "flex justify-between items-center w-40 h-12 px-4 bg-gray-500 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300" +
+              " " +
+              style
+            }
           >
-            <></>
-          </a>
-        </li>
+            <a
+              href={href}
+              className="flex justify-between items-center w-full text-white"
+              target="_blank"
+              download={download}
+              rel="noreferrer"
+            >
+              {child}
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   );
