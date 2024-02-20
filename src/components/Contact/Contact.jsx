@@ -2,6 +2,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
+      id="Contact"
       className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
@@ -12,7 +13,11 @@ const Contact = () => {
           <p className="py-6">Submit the Form below to get in touch</p>
         </div>
         <div className="flex justify-center items-center">
-          <form action="" className="flex flex-col w-full md:w-1/2">
+          <form
+            action="https://getform.io/f/NbW5Mgey"
+            className="flex flex-col w-full md:w-1/2"
+            method="POST"
+          >
             <input
               type="text"
               name="name"
