@@ -1,4 +1,4 @@
-import HeroImage from "../../assets/pic/heroImage.png";
+import main from "../../assets/pic/main.png";
 import { RiArrowRightSLine } from "react-icons/ri";
 
 const Home = () => {
@@ -26,7 +26,7 @@ const Home = () => {
         </div>
         <div>
           <img
-            src={HeroImage}
+            src={main}
             alt="profile"
             className="rounded-2xl mx-auto w-2/3 md:w-full"
           />
