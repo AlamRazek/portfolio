@@ -1,7 +1,7 @@
-import arrayDestruct from "../../assets/portfolio/arrayDestruct.jpg";
+import arrayDestruct from "../../assets/portfolio/arrayDestruct.png";
 import installNode from "../../assets/portfolio/installNode.jpg";
-import navbar from "../../assets/portfolio/navbar.jpg";
-import reactParallax from "../../assets/portfolio/reactParallax.jpg";
+import jobnest from "../../assets/portfolio/jobnest.png";
+import accumed from "../../assets/portfolio/accumed.png";
 import reactSmooth from "../../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../../assets/portfolio/reactWeather.jpg";
 
@@ -10,15 +10,17 @@ const Portfolio = () => {
     {
       id: 1,
       src: arrayDestruct,
-      link: "https://accumed-diagnostics.web.app/",
+      link: "https://fine-tech.web.app/",
     },
     {
       id: 2,
-      src: reactParallax,
+      src: accumed,
+      link: "https://accumed-diagnostics.web.app/",
     },
     {
       id: 3,
-      src: navbar,
+      src: jobnest,
+      link: "https://jobnest-738ec.web.app/",
     },
     {
       id: 4,
@@ -58,10 +60,10 @@ const Portfolio = () => {
               />
               <div className="flex items-center justify-center">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
+                  <a href={link}> Demo</a>
                 </button>
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  <a href={link}>Code</a>
+                  <a>Code </a>
                 </button>
               </div>
             </div>
