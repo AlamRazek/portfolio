@@ -1,9 +1,9 @@
 import arrayDestruct from "../../assets/portfolio/arrayDestruct.png";
-import installNode from "../../assets/portfolio/installNode.jpg";
+
 import jobnest from "../../assets/portfolio/jobnest.png";
 import accumed from "../../assets/portfolio/accumed.png";
 import bistroBoss from "../../assets/portfolio/bistro-boss.png";
-import shop from "../../assets/portfolio/shop.png";
+
 import eventGuru from "../../assets/portfolio/event-guru.png";
 import { FaLink } from "react-icons/fa";
 
@@ -43,11 +43,11 @@ const Portfolio = () => {
       link: "https://event-guru-91ee5.web.app/",
       client: "https://github.com/AlamRazek/Event-Guru",
     },
-    {
+    /*     {
       id: 6,
       src: shop,
       link: "https://sunny-jelly-b7ffb1.netlify.app/",
-    },
+    }, */
   ];
 
   return (
