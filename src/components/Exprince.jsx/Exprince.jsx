@@ -2,7 +2,7 @@ import html from "../../assets/pic/html.png";
 import css from "../../assets/pic/css.png";
 import javascript from "../../assets/pic/javascript.png";
 import reactImage from "../../assets/pic/react.png";
-import nextjs from "../../assets/pic/nextjs.png";
+import firebase from "../../assets/pic/firebase.png";
 import graphql from "../../assets/pic/graphql.png";
 import github from "../../assets/pic/github.png";
 import tailwind from "../../assets/pic/tailwind.png";
@@ -41,8 +41,8 @@ const Experience = () => {
     },
     {
       id: 6,
-      src: nextjs,
-      title: "NextJs",
+      src: firebase,
+      title: "Firebase",
       style: "shadow--500",
     },
     {

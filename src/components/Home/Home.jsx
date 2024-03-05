@@ -1,6 +1,7 @@
 import { Link } from "react-scroll";
 import main from "../../assets/pic/main.png";
 import { RiArrowRightSLine } from "react-icons/ri";
+import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
@@ -37,7 +38,16 @@ const Home = () => {
         <div className="hero-content flex-col lg:flex-row-reverse ">
           <img src={main} className="max-w-sm rounded-lg shadow-2xl" />
           <div>
-            <h1 className="text-4xl sm:text-7xl">I'm a Full Stack Developer</h1>
+            <h1 className="text-4xl sm:text-7xl">
+              <Typewriter
+                options={{
+                  autoStart: true,
+                  loop: true,
+                  delay: 100,
+                  strings: [" I am a Full Stack Developer"],
+                }}
+              />{" "}
+            </h1>
             <p className="py-6">
               I have Experience building and desgining of software. Currently, i
               love to work on web application using technologies like React.
