@@ -2,8 +2,10 @@ import arrayDestruct from "../../assets/portfolio/arrayDestruct.png";
 import installNode from "../../assets/portfolio/installNode.jpg";
 import jobnest from "../../assets/portfolio/jobnest.png";
 import accumed from "../../assets/portfolio/accumed.png";
+import bistroBoss from "../../assets/portfolio/bistro-boss.png";
 import reactSmooth from "../../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../../assets/portfolio/reactWeather.jpg";
+import { FaLink } from "react-icons/fa";
 
 const Portfolio = () => {
   const portfolios = [
@@ -11,20 +13,29 @@ const Portfolio = () => {
       id: 1,
       src: arrayDestruct,
       link: "https://fine-tech.web.app/",
+      client: "https://github.com/AlamRazek/FineTech-Client",
+      server: "https://github.com/AlamRazek/FineTech-server",
     },
     {
       id: 2,
       src: accumed,
       link: "https://accumed-diagnostics.web.app/",
+      client: "https://github.com/AlamRazek/AccuMed-Diagnostics-client",
+      server: "https://github.com/AlamRazek/AccuMed-Diagnostics-server",
     },
     {
       id: 3,
       src: jobnest,
       link: "https://jobnest-738ec.web.app/",
+      client: "https://github.com/AlamRazek/jobNest-client",
+      server: "https://github.com/AlamRazek/jobnest-server",
     },
     {
       id: 4,
-      src: reactSmooth,
+      src: bistroBoss,
+      link: "https://bistro-boss-f47c0.web.app/",
+      client: "https://github.com/AlamRazek/Bistro-boss-client",
+      server: "https://github.com/AlamRazek/Bistro-Boss-server",
     },
     {
       id: 5,
@@ -51,7 +62,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, link }) => (
+          {portfolios.map(({ id, src, link, client, server }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -62,9 +73,48 @@ const Portfolio = () => {
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   <a href={link}> Demo</a>
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  onClick={() =>
+                    document.getElementById("my_modal_3").showModal()
+                  }
+                >
                   <a>Code </a>
                 </button>
+                <dialog id="my_modal_3" className="modal text-black">
+                  <div className="modal-box">
+                    <form method="dialog">
+                      {/* if there is a button in form, it will close the modal */}
+                      <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                        ✕
+                      </button>
+                    </form>
+                    <h3 className="font-bold text-lg">Code:</h3>
+                    <p className="py-4 flex gap-2">
+                      <span>
+                        {" "}
+                        <FaLink className="" />
+                      </span>
+                      <a
+                        href={client}
+                        target="_blank"
+                        className="text-blue-700 font-bold"
+                      >
+                        Client-side code
+                      </a>
+                    </p>
+                    <p className="py-4 flex gap-2">
+                      <FaLink className="" />
+                      <a
+                        href={server}
+                        target="_blank"
+                        className="text-blue-700 font-bold"
+                      >
+                        Server-side code
+                      </a>
+                    </p>
+                  </div>
+                </dialog>
               </div>
             </div>
           ))}
