@@ -43,11 +43,11 @@ const Portfolio = () => {
       link: "https://event-guru-91ee5.web.app/",
       client: "https://github.com/AlamRazek/Event-Guru",
     },
-    /*     {
+    {
       id: 6,
       src: shop,
       link: "https://sunny-jelly-b7ffb1.netlify.app/",
-    }, */
+    },
   ];
 
   return (
