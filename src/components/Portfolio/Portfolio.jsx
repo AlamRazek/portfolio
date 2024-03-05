@@ -37,14 +37,14 @@ const Portfolio = () => {
       client: "https://github.com/AlamRazek/Bistro-boss-client",
       server: "https://github.com/AlamRazek/Bistro-Boss-server",
     },
-    {
+    /*    {
       id: 5,
       src: installNode,
     },
     {
       id: 6,
       src: reactWeather,
-    },
+    }, */
   ];
 
   return (
