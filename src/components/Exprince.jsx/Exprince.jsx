@@ -3,9 +3,12 @@ import css from "../../assets/pic/css.png";
 import javascript from "../../assets/pic/javascript.png";
 import reactImage from "../../assets/pic/react.png";
 import firebase from "../../assets/pic/firebase.png";
-import graphql from "../../assets/pic/graphql.png";
+import node from "../../assets/pic/node.png";
+import express from "../../assets/pic/express-js-4.png";
 import github from "../../assets/pic/github.png";
 import tailwind from "../../assets/pic/tailwind.png";
+import mongoDB from "../../assets/pic/MongoDB.png";
+import stripe from "../../assets/pic/stripe.png";
 
 const Experience = () => {
   const techs = [
@@ -43,13 +46,37 @@ const Experience = () => {
       id: 6,
       src: firebase,
       title: "Firebase",
-      style: "shadow--500",
+      style: "shadow-yellow-800",
     },
     {
       id: 7,
       src: github,
       title: "GitHub",
       style: "shadow-gray-500",
+    },
+    {
+      id: 8,
+      src: node,
+      title: "Node.js",
+      style: "shadow-green-400",
+    },
+    {
+      id: 9,
+      src: express,
+      title: "Express.js",
+      style: "shadow-gray-500",
+    },
+    {
+      id: 10,
+      src: mongoDB,
+      title: "MongoDB",
+      style: "shadow-green-700",
+    },
+    {
+      id: 11,
+      src: stripe,
+      title: "Stripe",
+      style: "shadow-violet-400",
     },
   ];
 

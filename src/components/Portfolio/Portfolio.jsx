@@ -106,16 +106,20 @@ const Portfolio = () => {
                         Client-side code
                       </a>
                     </p>
-                    <p className="py-4 flex gap-2">
-                      <FaLink className="" />
-                      <a
-                        href={server}
-                        target="_blank"
-                        className="text-blue-700 font-bold"
-                      >
-                        Server-side code
-                      </a>
-                    </p>
+                    {server ? (
+                      <p className="py-4 flex gap-2">
+                        <FaLink className="" />
+                        <a
+                          href={server}
+                          target="_blank"
+                          className="text-blue-700 font-bold"
+                        >
+                          Server-side code
+                        </a>
+                      </p>
+                    ) : (
+                      {}
+                    )}
                   </div>
                 </dialog>
               </div>
