@@ -79,12 +79,12 @@ const Portfolio = () => {
                 <button
                   className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
                   onClick={() =>
-                    document.getElementById("my_modal_3").showModal()
+                    document.getElementById(`my_modal_${id}`).showModal()
                   }
                 >
                   <a>Code </a>
                 </button>
-                <dialog id="my_modal_3" className="modal text-black">
+                <dialog id={`my_modal_${id}`} className="modal text-black">
                   <div className="modal-box">
                     <form method="dialog">
                       {/* if there is a button in form, it will close the modal */}
@@ -118,7 +118,7 @@ const Portfolio = () => {
                         </a>
                       </p>
                     ) : (
-                      {}
+                      <div>serverSideData doesn't exist</div>
                     )}
                   </div>
                 </dialog>
