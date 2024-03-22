@@ -36,7 +36,7 @@ const Home = () => {
       </div> */}
       <div className="hero max-w-screen-lg mx-auto min-h-screen text-white ">
         <div className="hero-content flex-col lg:flex-row-reverse ">
-          <img src={main} className="max-w-sm rounded-lg shadow-2xl" />
+          <img src={main} className="md:max-w-sm rounded-lg shadow-2xl" />
           <div>
             <h1 className="text-4xl sm:text-7xl">
               <Typewriter
@@ -44,7 +44,7 @@ const Home = () => {
                   autoStart: true,
                   loop: true,
                   delay: 100,
-                  strings: [" I am a Full Stack Developer"],
+                  strings: ["Hi,I am Razek", "I am a Full Stack Developer"],
                 }}
               />{" "}
             </h1>

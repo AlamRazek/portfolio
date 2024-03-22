@@ -84,7 +84,10 @@ const Portfolio = () => {
                 >
                   <a>Code </a>
                 </button>
-                <dialog id={`my_modal_${id}`} className="modal text-black">
+                <dialog
+                  id={`my_modal_${id}`}
+                  className="modal text-black sm:modal-middle"
+                >
                   <div className="modal-box">
                     <form method="dialog">
                       {/* if there is a button in form, it will close the modal */}
