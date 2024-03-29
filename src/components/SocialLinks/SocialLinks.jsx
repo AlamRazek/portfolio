@@ -32,7 +32,7 @@ const SocialLinks = () => {
       ),
       href: "mailto:ohidul933@gmail.com",
     },
-    /*    {
+    {
       id: 4,
       child: (
         <>
@@ -42,7 +42,7 @@ const SocialLinks = () => {
       href: "/src/assets/portfolio/Razek-Resume-m.pdf",
       style: "rounded-br-md",
       download: "Razek-resume",
-    }, */
+    },
   ];
 
   return (
