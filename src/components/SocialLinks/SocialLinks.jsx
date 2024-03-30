@@ -32,17 +32,7 @@ const SocialLinks = () => {
       ),
       href: "mailto:ohidul933@gmail.com",
     },
-    {
-      id: 4,
-      child: (
-        <>
-          Resume <BsFillPersonLinesFill size={28} />
-        </>
-      ),
-      href: "/Razek-resume_.pdf",
-      style: "rounded-br-md",
-      download: "Razek-resume",
-    },
+
     {
       id: 4,
       child: (
