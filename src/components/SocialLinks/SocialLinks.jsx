@@ -43,6 +43,17 @@ const SocialLinks = () => {
       style: "rounded-br-md",
       download: "Razek-resume",
     },
+    {
+      id: 4,
+      child: (
+        <>
+          Resume <BsFillPersonLinesFill size={28} />
+        </>
+      ),
+      href: "/Razek-Resume-1.pdf",
+      style: "rounded-br-md",
+      download: "Razek-resume",
+    },
   ];
 
   return (
